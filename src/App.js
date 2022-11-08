@@ -9,6 +9,7 @@ import RegisForm from "./Components/RegisForm";
 import Navbar from "./Components/Navbar";
 import LoginAuth from "./Components/LoginAuth";
 import Todo from "./Components/Todo/Todo";
+import Calculator from "./Components/Calculator/Calculator";
 
 function App() {
   const components = [
@@ -19,6 +20,7 @@ function App() {
     { name: "Navbar", path: "/navbar" },
     { name: "LoginAuth", path: "/loginauth" },
     { name: "Todo", path: "/todo" },
+    { name: "Calculator", path: "/calculator" },
   ];
 
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path="loginauth" element={<LoginAuth />} />
         <Route path="navbar" element={<Navbar />} />
         <Route path="todo" element={<Todo />} />
+        <Route path="calculator" element={<Calculator />} />
 
         {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
